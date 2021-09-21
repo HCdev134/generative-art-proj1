@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicking Particle Effect</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        canvas{
+            z-index: 0;
+        }
+        .small-nav-menu{
+            overflow-x: hidden;
+            background: #fff; 
+            
+        }
+        .menu{
+            overflow-x: hidden;
+            position: relative; 
+            background: #fff;
+            margin:0;
+            padding:0; 
+            top: 0; 
+            left: 0; 
+            z-index: 999;
+            width: 90%; 
+        }
+        .menu a{
+            padding: 2em; 
+            text-decoration: none;
+            font-size: 24px; 
+            cursor: pointer; 
+            color: #222; 
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="fixed-instructions-container" style="background: #fff; position: fixed; display: none; overflow-x: hidden;">
+        <div class="go-back-btn-container">
+            <a href="javascript:void(0)">Go Back</a>
+        </div>
+    </div> -->
+    <div class="small-nav-menu">
+        <div class="menu">
+            <a href="./static/movment1.html">Particle Movement 1</a>
+            <a href="./index.html">Back Home</a>
+            <a href=""></a>
+            <a href=""></a>
+        </div>
+    </div>
+    <canvas id="canvas-one">
+
+    </canvas>
+    <script src="./js/script.js"></script>
+</body>
+</html>
