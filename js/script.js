@@ -79,7 +79,16 @@ function branchOut(){
         root.draw()
     }
 }
+function branchOutExtraLoops(){
+    const centerX = mouse.x; 
+    const centerY = mouse.y; 
+    let j = 0;
+    for(j = 0; j < 20; j++){
 
+        const root_two = new rootDrawing(mouse.x, mouse.y, "#022", centerX, centerY);
+        root_two.draw()
+    }
+}
 window.addEventListener("resize", function(){
     canvas.width = window.innerWidth; 
     canvas.height = window.innerHeight; 
@@ -89,6 +98,13 @@ window.addEventListener("mousemove", function(){
 
 
     // Gives Fading Particles when matched with background color and opacity 
+    ctx.fillStyle = "rgba(0,0,0,0.4)";
+    ctx.fillRect(0, 0, canvas.width, canvas.height)
+    // ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    branchOut()
+});
+window.addEventListener("touchmove", function(){
     ctx.fillStyle = "rgba(0,0,0,0.4)";
     ctx.fillRect(0, 0, canvas.width, canvas.height)
     // ctx.clearRect(0, 0, canvas.width, canvas.height);
